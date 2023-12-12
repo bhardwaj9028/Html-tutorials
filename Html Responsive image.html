@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Responsive Image</h2>
+<p>When the CSS width property is set in a percentage value, the image will scale up and down when resizing the browser window. Resize the browser window to see the effect.</p>
+
+<img src="html icon.png" style="width:100%;">
+
+
+
+
+<!---->
+
+<h2>Responsive Image</h2>
+<p>"max-width:100%" prevents the image from getting bigger than its original size. However, if you make the browser window smaller, the image will still scale down.</p>
+<p>Resize the browser window to see the effect.</p>
+
+<img src="html icon.png" style="max-width:100%;height:auto;">
+
+
+<!--douts hai-->
+
+<h2>Show Different Images Depending on Browser Width</h2>
+<p>Resize the browser width and the image will change at 600px and 1500px.</p>
+
+<picture>
+  <source srcset="picture" media="(max-width: 600px)">
+  <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+  <source srcset="flowers.jpg">
+  <img src="html icon.png" alt="Flowers" style="width:auto;">
+</picture>
+
+
+</picture>
+</body>
+</html>
